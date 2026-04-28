@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cb91915b5befcece955b81556a7c7abc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cb91915b5befcece955b81556a7c7abc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cb91915b5befcece955b81556a7c7abc = L.map(
+                "map_cb91915b5befcece955b81556a7c7abc",
+                {
+                    center: [-7.255, 112.75],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff60cc6a922e43abf116654ffeaf06ac = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ff60cc6a922e43abf116654ffeaf06ac.addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var marker_bd64cef334e4ea3bc69476f8857d935e = L.marker(
+                [-7.2654, 112.7503],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_ee2b212d7b32ac9c27182fc15985a86d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e1\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_bd64cef334e4ea3bc69476f8857d935e.setIcon(div_icon_ee2b212d7b32ac9c27182fc15985a86d);
+            
+    
+            var marker_2ce9185dfcfb546947f626bca0d285a7 = L.marker(
+                [-7.2654, 112.7503],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_6a50cb31b11ec9865da9131b13aeb11f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31b0111851aec0b58c40315f36a988ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_55c109f8258f22444565001392c0ecb1 = $(`<div id="html_55c109f8258f22444565001392c0ecb1" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 1</b><br>         <b>Lokasi:</b> 1. Monumen Kapal Selam<br>         <b>Elevasi:</b> 4.0 m     </div>     </div>`)[0];
+                popup_31b0111851aec0b58c40315f36a988ad.setContent(html_55c109f8258f22444565001392c0ecb1);
+            
+        
+
+        marker_2ce9185dfcfb546947f626bca0d285a7.bindPopup(popup_31b0111851aec0b58c40315f36a988ad)
+        ;
+
+        
+    
+    
+                marker_2ce9185dfcfb546947f626bca0d285a7.setIcon(icon_6a50cb31b11ec9865da9131b13aeb11f);
+            
+    
+            var marker_2acd1629f5596144b6144aeb57b8c302 = L.marker(
+                [-7.2453, 112.7379],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_38b30790721c356e2fec15821ff023c6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e2\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_2acd1629f5596144b6144aeb57b8c302.setIcon(div_icon_38b30790721c356e2fec15821ff023c6);
+            
+    
+            var marker_cda90e3cc75117b9ac83276d8bc7a229 = L.marker(
+                [-7.2453, 112.7379],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_6599c3ca257cee3c99019f75dc7f0a1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93aa834a252b8424bdde2b74655cbb00 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_19381f20d9134c7f1e1171a6d1f97754 = $(`<div id="html_19381f20d9134c7f1e1171a6d1f97754" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 2</b><br>         <b>Lokasi:</b> 2. Tugu Pahlawan<br>         <b>Elevasi:</b> 9.0 m     </div>     </div>`)[0];
+                popup_93aa834a252b8424bdde2b74655cbb00.setContent(html_19381f20d9134c7f1e1171a6d1f97754);
+            
+        
+
+        marker_cda90e3cc75117b9ac83276d8bc7a229.bindPopup(popup_93aa834a252b8424bdde2b74655cbb00)
+        ;
+
+        
+    
+    
+                marker_cda90e3cc75117b9ac83276d8bc7a229.setIcon(icon_6599c3ca257cee3c99019f75dc7f0a1b);
+            
+    
+            var marker_ad96f1bb2fd54497925fcae47200d203 = L.marker(
+                [-7.2365, 112.7383],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_585410029c79d045f4c5e4e2df856926 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e3\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_ad96f1bb2fd54497925fcae47200d203.setIcon(div_icon_585410029c79d045f4c5e4e2df856926);
+            
+    
+            var marker_28672ca52f73bed4261649faa70d0945 = L.marker(
+                [-7.2365, 112.7383],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_ae79c27cd711de509709c4e62acf11ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a75b6449bf760bfd5160c7cd2758519c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_19fdc1476f24c6f738c5fe765b45cffc = $(`<div id="html_19fdc1476f24c6f738c5fe765b45cffc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 3</b><br>         <b>Lokasi:</b> 3. Jembatan Merah<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_a75b6449bf760bfd5160c7cd2758519c.setContent(html_19fdc1476f24c6f738c5fe765b45cffc);
+            
+        
+
+        marker_28672ca52f73bed4261649faa70d0945.bindPopup(popup_a75b6449bf760bfd5160c7cd2758519c)
+        ;
+
+        
+    
+    
+                marker_28672ca52f73bed4261649faa70d0945.setIcon(icon_ae79c27cd711de509709c4e62acf11ab);
+            
+    
+            var marker_4abe71941c291afdae6bfcf7aee17471 = L.marker(
+                [-7.2573, 112.7388],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_aaf26cd62c3915b050a70b500563c4e4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e4\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_4abe71941c291afdae6bfcf7aee17471.setIcon(div_icon_aaf26cd62c3915b050a70b500563c4e4);
+            
+    
+            var marker_e0fea7c83a72f7f2f3386a62d4a017bf = L.marker(
+                [-7.2573, 112.7388],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_139153bc6f7b727915d73b79a711eb42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf5123f47a8e2591cc6c951d51028175 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4dc54ce356efbe7fce77329395e4304a = $(`<div id="html_4dc54ce356efbe7fce77329395e4304a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 4</b><br>         <b>Lokasi:</b> 4. Hotel Majapahit<br>         <b>Elevasi:</b> 9.0 m     </div>     </div>`)[0];
+                popup_cf5123f47a8e2591cc6c951d51028175.setContent(html_4dc54ce356efbe7fce77329395e4304a);
+            
+        
+
+        marker_e0fea7c83a72f7f2f3386a62d4a017bf.bindPopup(popup_cf5123f47a8e2591cc6c951d51028175)
+        ;
+
+        
+    
+    
+                marker_e0fea7c83a72f7f2f3386a62d4a017bf.setIcon(icon_139153bc6f7b727915d73b79a711eb42);
+            
+    
+            var marker_48bac9c708e47f7433cdecaff1a7fb9e = L.marker(
+                [-7.2589, 112.7469],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_f03effbfdf096af2ea1586c864b237d3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e5\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_48bac9c708e47f7433cdecaff1a7fb9e.setIcon(div_icon_f03effbfdf096af2ea1586c864b237d3);
+            
+    
+            var marker_7adbaa45960aba4cd20b5a2b93eaa793 = L.marker(
+                [-7.2589, 112.7469],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_cf9905d4027a00e8b176d95434f0b10e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a2cf4de2088603b6db3650bf28a8dae = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d2625f2ed100e5db7e142945829d4bd6 = $(`<div id="html_d2625f2ed100e5db7e142945829d4bd6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 5</b><br>         <b>Lokasi:</b> 5. Balai Kota Surabaya<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_6a2cf4de2088603b6db3650bf28a8dae.setContent(html_d2625f2ed100e5db7e142945829d4bd6);
+            
+        
+
+        marker_7adbaa45960aba4cd20b5a2b93eaa793.bindPopup(popup_6a2cf4de2088603b6db3650bf28a8dae)
+        ;
+
+        
+    
+    
+                marker_7adbaa45960aba4cd20b5a2b93eaa793.setIcon(icon_cf9905d4027a00e8b176d95434f0b10e);
+            
+    
+            var marker_5b43049f368ff631144f1a451e27be5d = L.marker(
+                [-7.2306, 112.7343],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_bed6cce9b51bf623174d432a7908cf66 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e6\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_5b43049f368ff631144f1a451e27be5d.setIcon(div_icon_bed6cce9b51bf623174d432a7908cf66);
+            
+    
+            var marker_4672c1945d98ee1f64d5e772ad46b11c = L.marker(
+                [-7.2306, 112.7343],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_2240c2d4e4002a715c723a3dfa837cd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d5df52f4c983f6a6468dda5b14b392b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ec28ff0512c1d64cb35eacc264904b4b = $(`<div id="html_ec28ff0512c1d64cb35eacc264904b4b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 6</b><br>         <b>Lokasi:</b> 6. House of Sampoerna<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_4d5df52f4c983f6a6468dda5b14b392b.setContent(html_ec28ff0512c1d64cb35eacc264904b4b);
+            
+        
+
+        marker_4672c1945d98ee1f64d5e772ad46b11c.bindPopup(popup_4d5df52f4c983f6a6468dda5b14b392b)
+        ;
+
+        
+    
+    
+                marker_4672c1945d98ee1f64d5e772ad46b11c.setIcon(icon_2240c2d4e4002a715c723a3dfa837cd1);
+            
+    
+            var marker_29df3e8cf6fb352b09f3e917619592e9 = L.marker(
+                [-7.2514, 112.7363],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_378dfdd0ee0023b6adf607c3488fcfe3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e7\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_29df3e8cf6fb352b09f3e917619592e9.setIcon(div_icon_378dfdd0ee0023b6adf607c3488fcfe3);
+            
+    
+            var marker_74737c795578a57d96efacdba440bdd0 = L.marker(
+                [-7.2514, 112.7363],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_674c47753c6a6a5d1d3c642872052b81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_113c4baa5f201267f722f318a13d98f3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ec948641c4c696c7dad8f0d861efee08 = $(`<div id="html_ec948641c4c696c7dad8f0d861efee08" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 7</b><br>         <b>Lokasi:</b> 7. Museum Surabaya (Siola)<br>         <b>Elevasi:</b> 7.0 m     </div>     </div>`)[0];
+                popup_113c4baa5f201267f722f318a13d98f3.setContent(html_ec948641c4c696c7dad8f0d861efee08);
+            
+        
+
+        marker_74737c795578a57d96efacdba440bdd0.bindPopup(popup_113c4baa5f201267f722f318a13d98f3)
+        ;
+
+        
+    
+    
+                marker_74737c795578a57d96efacdba440bdd0.setIcon(icon_674c47753c6a6a5d1d3c642872052b81);
+            
+    
+            var marker_95efba4382b9ceee638013df93f792e4 = L.marker(
+                [-7.2504, 112.7538],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_ff3367db9485e2b755a35361a47da9b6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e8\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_95efba4382b9ceee638013df93f792e4.setIcon(div_icon_ff3367db9485e2b755a35361a47da9b6);
+            
+    
+            var marker_0ce3c748d0dc394a9519b5123390abc8 = L.marker(
+                [-7.2504, 112.7538],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_6a9f613b759cfcfeb8c951ffb0fc0eb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c03a3d60e81c439502a7c25a84534bd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_99c2845e40cd7fe7db9a39d5b6d24848 = $(`<div id="html_99c2845e40cd7fe7db9a39d5b6d24848" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 8</b><br>         <b>Lokasi:</b> 8. Rumah WR Soepratman<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_0c03a3d60e81c439502a7c25a84534bd.setContent(html_99c2845e40cd7fe7db9a39d5b6d24848);
+            
+        
+
+        marker_0ce3c748d0dc394a9519b5123390abc8.bindPopup(popup_0c03a3d60e81c439502a7c25a84534bd)
+        ;
+
+        
+    
+    
+                marker_0ce3c748d0dc394a9519b5123390abc8.setIcon(icon_6a9f613b759cfcfeb8c951ffb0fc0eb6);
+            
+    
+            var marker_7bf1c4e686da714b78e784420ce20fa5 = L.marker(
+                [-7.2365, 112.7358],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_4961603916eee14748610a286a4832f8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e9\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_7bf1c4e686da714b78e784420ce20fa5.setIcon(div_icon_4961603916eee14748610a286a4832f8);
+            
+    
+            var marker_ae56bf8f71ef1071e8dc190563625450 = L.marker(
+                [-7.2365, 112.7358],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_4b2084ddd87ed2d56944b0de0188e4e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fdeb22b166d28ee63ae5a540e6dbc67 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_95662e16f9294ea7afa5ccc92c138b72 = $(`<div id="html_95662e16f9294ea7afa5ccc92c138b72" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 9</b><br>         <b>Lokasi:</b> 9. Gedung De Javasche Bank<br>         <b>Elevasi:</b> 11.0 m     </div>     </div>`)[0];
+                popup_7fdeb22b166d28ee63ae5a540e6dbc67.setContent(html_95662e16f9294ea7afa5ccc92c138b72);
+            
+        
+
+        marker_ae56bf8f71ef1071e8dc190563625450.bindPopup(popup_7fdeb22b166d28ee63ae5a540e6dbc67)
+        ;
+
+        
+    
+    
+                marker_ae56bf8f71ef1071e8dc190563625450.setIcon(icon_4b2084ddd87ed2d56944b0de0188e4e3);
+            
+    
+            var marker_7f2b49ab21ac3025b5171a29b576cf58 = L.marker(
+                [-7.2435, 112.7335],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_4d239339ec3b01301c22791dae23be6c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e10\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_7f2b49ab21ac3025b5171a29b576cf58.setIcon(div_icon_4d239339ec3b01301c22791dae23be6c);
+            
+    
+            var marker_fe17663379f0880646218841727cd074 = L.marker(
+                [-7.2435, 112.7335],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_ea704551cd43adae75935e51420c6448 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00588818fd11f9db3cbbc29ebcb086e7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_32249e048764e171e741f695f7e7128a = $(`<div id="html_32249e048764e171e741f695f7e7128a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 10</b><br>         <b>Lokasi:</b> 10. Gereja Katolik Kepanjen<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_00588818fd11f9db3cbbc29ebcb086e7.setContent(html_32249e048764e171e741f695f7e7128a);
+            
+        
+
+        marker_fe17663379f0880646218841727cd074.bindPopup(popup_00588818fd11f9db3cbbc29ebcb086e7)
+        ;
+
+        
+    
+    
+                marker_fe17663379f0880646218841727cd074.setIcon(icon_ea704551cd43adae75935e51420c6448);
+            
+    
+            var marker_a638a6c942c15ebd8f777faa6ca2efd7 = L.marker(
+                [-7.222192, 112.738044],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_ae1057459a4792b1fc51bbd25d513c73 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e11\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_a638a6c942c15ebd8f777faa6ca2efd7.setIcon(div_icon_ae1057459a4792b1fc51bbd25d513c73);
+            
+    
+            var marker_6fa33f2d2262e17b51ea3744c240fe6c = L.marker(
+                [-7.222192, 112.738044],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_3910cce3d4f6523fa60be70809534021 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2939cc208b0414d5b9c7da930fecd200 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d3399ea25d27af7c964c31e8c4169855 = $(`<div id="html_d3399ea25d27af7c964c31e8c4169855" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 11</b><br>         <b>Lokasi:</b> 11. Jembatan Petekan<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_2939cc208b0414d5b9c7da930fecd200.setContent(html_d3399ea25d27af7c964c31e8c4169855);
+            
+        
+
+        marker_6fa33f2d2262e17b51ea3744c240fe6c.bindPopup(popup_2939cc208b0414d5b9c7da930fecd200)
+        ;
+
+        
+    
+    
+                marker_6fa33f2d2262e17b51ea3744c240fe6c.setIcon(icon_3910cce3d4f6523fa60be70809534021);
+            
+    
+            var marker_82def1e9945fd1008fd34dab68d091b8 = L.marker(
+                [-7.236281, 112.736915],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_5f7ab516c05a7093506556e0c711c7b5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e12\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_82def1e9945fd1008fd34dab68d091b8.setIcon(div_icon_5f7ab516c05a7093506556e0c711c7b5);
+            
+    
+            var marker_8ddaa5e873fd9ab131fde86ad37b4923 = L.marker(
+                [-7.236281, 112.736915],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_433788c44d899e0faf27210d99b4cc27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fa1fadfe229524c572a4da921c3645c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9d39f31e928b29a2387d91cd472ffa26 = $(`<div id="html_9d39f31e928b29a2387d91cd472ffa26" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 12</b><br>         <b>Lokasi:</b> 12. Gedung Internatio<br>         <b>Elevasi:</b> 11.0 m     </div>     </div>`)[0];
+                popup_1fa1fadfe229524c572a4da921c3645c.setContent(html_9d39f31e928b29a2387d91cd472ffa26);
+            
+        
+
+        marker_8ddaa5e873fd9ab131fde86ad37b4923.bindPopup(popup_1fa1fadfe229524c572a4da921c3645c)
+        ;
+
+        
+    
+    
+                marker_8ddaa5e873fd9ab131fde86ad37b4923.setIcon(icon_433788c44d899e0faf27210d99b4cc27);
+            
+    
+            var marker_d1eda6f6cf459a24d248661e5cba240b = L.marker(
+                [-7.263524, 112.743179],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_c23c4e7457db83d169f3dbb72856ddec = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e13\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_d1eda6f6cf459a24d248661e5cba240b.setIcon(div_icon_c23c4e7457db83d169f3dbb72856ddec);
+            
+    
+            var marker_f4ad1b850343f879bd242b4a7d9a3960 = L.marker(
+                [-7.263524, 112.743179],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_f2c4347a4ca31f515aca3474be8dec93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28a8b75357030c39f8f718368f8448dc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cd80983d3826a767ac47c4093e365388 = $(`<div id="html_cd80983d3826a767ac47c4093e365388" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 13</b><br>         <b>Lokasi:</b> 13. Gedung Negara Grahadi<br>         <b>Elevasi:</b> 7.0 m     </div>     </div>`)[0];
+                popup_28a8b75357030c39f8f718368f8448dc.setContent(html_cd80983d3826a767ac47c4093e365388);
+            
+        
+
+        marker_f4ad1b850343f879bd242b4a7d9a3960.bindPopup(popup_28a8b75357030c39f8f718368f8448dc)
+        ;
+
+        
+    
+    
+                marker_f4ad1b850343f879bd242b4a7d9a3960.setIcon(icon_f2c4347a4ca31f515aca3474be8dec93);
+            
+    
+            var marker_2e7f5c596bc7c0da8b465e6b793bf8ab = L.marker(
+                [-7.243218, 112.7377],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_8cd79a8c2b706a53e0ce332fed933238 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e14\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_2e7f5c596bc7c0da8b465e6b793bf8ab.setIcon(div_icon_8cd79a8c2b706a53e0ce332fed933238);
+            
+    
+            var marker_26e0e332e9cfc0b38765edce58f988f8 = L.marker(
+                [-7.243218, 112.7377],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_8d7bb04453c7b851fef77b079fe93dc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcdf16a1b1284692d7ee8e1b052e73c0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_47c8080570dfdfe0241e3f141f0e3944 = $(`<div id="html_47c8080570dfdfe0241e3f141f0e3944" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 14</b><br>         <b>Lokasi:</b> 14. Kantor Pos Kebon Rojo<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_dcdf16a1b1284692d7ee8e1b052e73c0.setContent(html_47c8080570dfdfe0241e3f141f0e3944);
+            
+        
+
+        marker_26e0e332e9cfc0b38765edce58f988f8.bindPopup(popup_dcdf16a1b1284692d7ee8e1b052e73c0)
+        ;
+
+        
+    
+    
+                marker_26e0e332e9cfc0b38765edce58f988f8.setIcon(icon_8d7bb04453c7b851fef77b079fe93dc4);
+            
+    
+            var marker_9b7dce3154360d7cada89c52d5b28666 = L.marker(
+                [-7.252464, 112.737747],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_e3e0c2faf7b8267fa10505cd91fec59a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e15\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_9b7dce3154360d7cada89c52d5b28666.setIcon(div_icon_e3e0c2faf7b8267fa10505cd91fec59a);
+            
+    
+            var marker_bba789a44b5fb0afeb7f5c6247dbf83e = L.marker(
+                [-7.252464, 112.737747],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_511ba8699fed798494bda37716ddf977 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_491a65d4f5241d7f9290676262681897 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_04d2196cd2241e3d1c1745cc6b1f9ce7 = $(`<div id="html_04d2196cd2241e3d1c1745cc6b1f9ce7" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 15</b><br>         <b>Lokasi:</b> 15. Rumah HOS Tjokroaminoto<br>         <b>Elevasi:</b> 7.0 m     </div>     </div>`)[0];
+                popup_491a65d4f5241d7f9290676262681897.setContent(html_04d2196cd2241e3d1c1745cc6b1f9ce7);
+            
+        
+
+        marker_bba789a44b5fb0afeb7f5c6247dbf83e.bindPopup(popup_491a65d4f5241d7f9290676262681897)
+        ;
+
+        
+    
+    
+                marker_bba789a44b5fb0afeb7f5c6247dbf83e.setIcon(icon_511ba8699fed798494bda37716ddf977);
+            
+    
+            var marker_b6447dac847f42a9c4b87a3d3ef25886 = L.marker(
+                [-7.253019586881285, 112.74035309946457],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_eda237adfc37ca0e14a841a42b7ba817 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e16\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_b6447dac847f42a9c4b87a3d3ef25886.setIcon(div_icon_eda237adfc37ca0e14a841a42b7ba817);
+            
+    
+            var marker_bb32f84f612dcbaf13fe01c6b159dce2 = L.marker(
+                [-7.253019586881285, 112.74035309946457],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_c031e1904053e73df0251c151a02892c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59a06b3e51ecb25787db6ebbce89506a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0acfa8c788987d876898e5c6c48a7d14 = $(`<div id="html_0acfa8c788987d876898e5c6c48a7d14" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 16</b><br>         <b>Lokasi:</b> 16. Makam Belanda Peneleh<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_59a06b3e51ecb25787db6ebbce89506a.setContent(html_0acfa8c788987d876898e5c6c48a7d14);
+            
+        
+
+        marker_bb32f84f612dcbaf13fe01c6b159dce2.bindPopup(popup_59a06b3e51ecb25787db6ebbce89506a)
+        ;
+
+        
+    
+    
+                marker_bb32f84f612dcbaf13fe01c6b159dce2.setIcon(icon_c031e1904053e73df0251c151a02892c);
+            
+    
+            var marker_595c36bff286215f94e81792febfe8c0 = L.marker(
+                [-7.250495592744265, 112.74075173450092],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_de874d110e6ce06fabdb18a07f4df99a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e17\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_595c36bff286215f94e81792febfe8c0.setIcon(div_icon_de874d110e6ce06fabdb18a07f4df99a);
+            
+    
+            var marker_ceaeb280c90d69e6f43ae61c5133f130 = L.marker(
+                [-7.250495592744265, 112.74075173450092],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_d925f59f9508b39289c898cead7a4381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c8fb2e079f0d94911456b6c87d44814 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ca4ec0658f8977f3437f8d117738090c = $(`<div id="html_ca4ec0658f8977f3437f8d117738090c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 17</b><br>         <b>Lokasi:</b> 17. Kampung Lawang Seketeng<br>         <b>Elevasi:</b> 7.0 m     </div>     </div>`)[0];
+                popup_9c8fb2e079f0d94911456b6c87d44814.setContent(html_ca4ec0658f8977f3437f8d117738090c);
+            
+        
+
+        marker_ceaeb280c90d69e6f43ae61c5133f130.bindPopup(popup_9c8fb2e079f0d94911456b6c87d44814)
+        ;
+
+        
+    
+    
+                marker_ceaeb280c90d69e6f43ae61c5133f130.setIcon(icon_d925f59f9508b39289c898cead7a4381);
+            
+    
+            var marker_fdeffa45863ca5ca2cdab55c98b46572 = L.marker(
+                [-7.279395032652996, 112.79009468032517],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_dd37663cc8514a3e281c6c3a53e7040a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: green; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e18\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_fdeffa45863ca5ca2cdab55c98b46572.setIcon(div_icon_dd37663cc8514a3e281c6c3a53e7040a);
+            
+    
+            var marker_3e8638c9f550f71887f6add507a2a38a = L.marker(
+                [-7.279395032652996, 112.79009468032517],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_4fe475101e816fbc86fa5a6c3ab10edd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c83483ad82f210467e107503d6072e2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a16fabdbbdb4b799460764aabcef91f4 = $(`<div id="html_a16fabdbbdb4b799460764aabcef91f4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 18</b><br>         <b>Lokasi:</b> 18. Gerbang Depan ITS<br>         <b>Elevasi:</b> 3.0 m     </div>     </div>`)[0];
+                popup_6c83483ad82f210467e107503d6072e2.setContent(html_a16fabdbbdb4b799460764aabcef91f4);
+            
+        
+
+        marker_3e8638c9f550f71887f6add507a2a38a.bindPopup(popup_6c83483ad82f210467e107503d6072e2)
+        ;
+
+        
+    
+    
+                marker_3e8638c9f550f71887f6add507a2a38a.setIcon(icon_4fe475101e816fbc86fa5a6c3ab10edd);
+            
+    
+            var marker_975c1be27d99068314c4c0c54c312d0a = L.marker(
+                [-7.2360970729302325, 112.73704713519352],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_444a369775af29e9d6ee8e73e4f64379 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e19\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_975c1be27d99068314c4c0c54c312d0a.setIcon(div_icon_444a369775af29e9d6ee8e73e4f64379);
+            
+    
+            var marker_323dd71295269cba2b9a07c6c59fbb86 = L.marker(
+                [-7.2360970729302325, 112.73704713519352],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_63922abb4011073918efc33a2ccfef42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31d148e3457589c151fef67b8810424f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_752d147fa21435f3953aed8b1ab440e4 = $(`<div id="html_752d147fa21435f3953aed8b1ab440e4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 19</b><br>         <b>Lokasi:</b> 19. Gedung Cerutu<br>         <b>Elevasi:</b> 11.0 m     </div>     </div>`)[0];
+                popup_31d148e3457589c151fef67b8810424f.setContent(html_752d147fa21435f3953aed8b1ab440e4);
+            
+        
+
+        marker_323dd71295269cba2b9a07c6c59fbb86.bindPopup(popup_31d148e3457589c151fef67b8810424f)
+        ;
+
+        
+    
+    
+                marker_323dd71295269cba2b9a07c6c59fbb86.setIcon(icon_63922abb4011073918efc33a2ccfef42);
+            
+    
+            var marker_077352074a228406d8e9571c17b90197 = L.marker(
+                [-7.272209, 112.742095],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_6739427d3350c9ff157deb8bb89a2d4b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e20\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_077352074a228406d8e9571c17b90197.setIcon(div_icon_6739427d3350c9ff157deb8bb89a2d4b);
+            
+    
+            var marker_af0568061f6c16d01822843c2ccf60e7 = L.marker(
+                [-7.272209, 112.742095],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_e0fc5fa231e1f7f0f7a00a91c962c283 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fd71493546501c6d42621ce1b6cb9ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b7338d59d65fdd2200d59535da8b7c9a = $(`<div id="html_b7338d59d65fdd2200d59535da8b7c9a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 20</b><br>         <b>Lokasi:</b> 20. Patung Karapan Sapi<br>         <b>Elevasi:</b> 26.0 m     </div>     </div>`)[0];
+                popup_9fd71493546501c6d42621ce1b6cb9ad.setContent(html_b7338d59d65fdd2200d59535da8b7c9a);
+            
+        
+
+        marker_af0568061f6c16d01822843c2ccf60e7.bindPopup(popup_9fd71493546501c6d42621ce1b6cb9ad)
+        ;
+
+        
+    
+    
+                marker_af0568061f6c16d01822843c2ccf60e7.setIcon(icon_e0fc5fa231e1f7f0f7a00a91c962c283);
+            
+    
+            var marker_532051101f6f4be74d88d7fc2723178f = L.marker(
+                [-7.247199578801502, 112.80219558900477],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_b763299ae046c70869b689911f8644f0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e21\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_532051101f6f4be74d88d7fc2723178f.setIcon(div_icon_b763299ae046c70869b689911f8644f0);
+            
+    
+            var marker_5086140e55c5e44a64bc0a4ad4c2506d = L.marker(
+                [-7.247199578801502, 112.80219558900477],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_f89abfe423eda479d2612e228eef4c67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6845cb4921c783a00243117e1f520b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3c86e816f3ac2bd2904c6166e5fc06d5 = $(`<div id="html_3c86e816f3ac2bd2904c6166e5fc06d5" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 21</b><br>         <b>Lokasi:</b> 21. Klenteng Sanggar Agung<br>         <b>Elevasi:</b> 0.0 m     </div>     </div>`)[0];
+                popup_dd6845cb4921c783a00243117e1f520b.setContent(html_3c86e816f3ac2bd2904c6166e5fc06d5);
+            
+        
+
+        marker_5086140e55c5e44a64bc0a4ad4c2506d.bindPopup(popup_dd6845cb4921c783a00243117e1f520b)
+        ;
+
+        
+    
+    
+                marker_5086140e55c5e44a64bc0a4ad4c2506d.setIcon(icon_f89abfe423eda479d2612e228eef4c67);
+            
+    
+            var marker_a5546d76e92027a915426ff44e6020d2 = L.marker(
+                [-7.255254406638845, 112.74278515368215],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_a4b4570fd717d015e42315c0b1c84eac = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e22\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_a5546d76e92027a915426ff44e6020d2.setIcon(div_icon_a4b4570fd717d015e42315c0b1c84eac);
+            
+    
+            var marker_a3b1244d47fc06025b9510f18d93e0fe = L.marker(
+                [-7.255254406638845, 112.74278515368215],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_4eee2a9c78da7b848ee1e982e10dd2d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db95530f2d535ba0db20198e3bb595c7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d8477fe185f50fda808e4c188cc357b3 = $(`<div id="html_d8477fe185f50fda808e4c188cc357b3" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 22</b><br>         <b>Lokasi:</b> 22. Museum Pendidikan<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_db95530f2d535ba0db20198e3bb595c7.setContent(html_d8477fe185f50fda808e4c188cc357b3);
+            
+        
+
+        marker_a3b1244d47fc06025b9510f18d93e0fe.bindPopup(popup_db95530f2d535ba0db20198e3bb595c7)
+        ;
+
+        
+    
+    
+                marker_a3b1244d47fc06025b9510f18d93e0fe.setIcon(icon_4eee2a9c78da7b848ee1e982e10dd2d0);
+            
+    
+            var marker_4ca93ebc9f613b038930046296d7ad57 = L.marker(
+                [-7.2367971558297395, 112.74387553040685],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_26c594dddb52387876f9b95ec1b89b71 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e23\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_4ca93ebc9f613b038930046296d7ad57.setIcon(div_icon_26c594dddb52387876f9b95ec1b89b71);
+            
+    
+            var marker_c1f5b42595f3b191dc64369fc55b7741 = L.marker(
+                [-7.2367971558297395, 112.74387553040685],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_dd4d1a30ba39d4cd2d3b681d558a03e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c5c50de6fcabd622e0cad1a14738380 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1e5259b2dd6f7171b7ee769c8783b9e6 = $(`<div id="html_1e5259b2dd6f7171b7ee769c8783b9e6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 23</b><br>         <b>Lokasi:</b> 23. Klenteng Hong Tiek Hian<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_4c5c50de6fcabd622e0cad1a14738380.setContent(html_1e5259b2dd6f7171b7ee769c8783b9e6);
+            
+        
+
+        marker_c1f5b42595f3b191dc64369fc55b7741.bindPopup(popup_4c5c50de6fcabd622e0cad1a14738380)
+        ;
+
+        
+    
+    
+                marker_c1f5b42595f3b191dc64369fc55b7741.setIcon(icon_dd4d1a30ba39d4cd2d3b681d558a03e1);
+            
+    
+            var marker_b8807b03c10fa11bbf16dfa56b5fe47b = L.marker(
+                [-7.267096754354455, 112.74418425368475],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_6c772f3b569a08eec4a704a39641020e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e24\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_b8807b03c10fa11bbf16dfa56b5fe47b.setIcon(div_icon_6c772f3b569a08eec4a704a39641020e);
+            
+    
+            var marker_ef8badd1250daa427012c461faa5d176 = L.marker(
+                [-7.267096754354455, 112.74418425368475],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_7221087923f164623ca50c9d554a0a80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b98e8bd46ec11599d71abbc97f5bd17 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_aee1041665d51db1833aef3a284168d2 = $(`<div id="html_aee1041665d51db1833aef3a284168d2" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 24</b><br>         <b>Lokasi:</b> 24. Monumen Bambu Runcing<br>         <b>Elevasi:</b> 7.0 m     </div>     </div>`)[0];
+                popup_4b98e8bd46ec11599d71abbc97f5bd17.setContent(html_aee1041665d51db1833aef3a284168d2);
+            
+        
+
+        marker_ef8badd1250daa427012c461faa5d176.bindPopup(popup_4b98e8bd46ec11599d71abbc97f5bd17)
+        ;
+
+        
+    
+    
+                marker_ef8badd1250daa427012c461faa5d176.setIcon(icon_7221087923f164623ca50c9d554a0a80);
+            
+    
+            var marker_5fadcb3e453be8d795e7a7b71e6da195 = L.marker(
+                [-7.261174085645066, 112.74291416110384],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_2c561c9c1d7ee00118ccbddc53218830 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e25\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_5fadcb3e453be8d795e7a7b71e6da195.setIcon(div_icon_2c561c9c1d7ee00118ccbddc53218830);
+            
+    
+            var marker_0c083ee78a3efe80df3d2bccb95ba540 = L.marker(
+                [-7.261174085645066, 112.74291416110384],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_97ed602ff8fa8fb450f35213c05e0998 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edb618c6fbd9485891d09647e3bad6f8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c94e790f24aefb2752c3ca7cbea73fb7 = $(`<div id="html_c94e790f24aefb2752c3ca7cbea73fb7" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 25</b><br>         <b>Lokasi:</b> 25. Taman Prestasi<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_edb618c6fbd9485891d09647e3bad6f8.setContent(html_c94e790f24aefb2752c3ca7cbea73fb7);
+            
+        
+
+        marker_0c083ee78a3efe80df3d2bccb95ba540.bindPopup(popup_edb618c6fbd9485891d09647e3bad6f8)
+        ;
+
+        
+    
+    
+                marker_0c083ee78a3efe80df3d2bccb95ba540.setIcon(icon_97ed602ff8fa8fb450f35213c05e0998);
+            
+    
+            var marker_b50d1fbba896466089f41662566e9623 = L.marker(
+                [-7.2343, 112.7351],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_c4cf774dcb34420bb719ea487ec724a5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e26\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_b50d1fbba896466089f41662566e9623.setIcon(div_icon_c4cf774dcb34420bb719ea487ec724a5);
+            
+    
+            var marker_56833969d570b0e03a00bc12c4b114bb = L.marker(
+                [-7.2343, 112.7351],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_6be860f2096ca89364fa5a720585a59f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f19bd7ae341adf3e66471509ddecc53 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_852758d5254604fff11806beba4b152a = $(`<div id="html_852758d5254604fff11806beba4b152a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 26</b><br>         <b>Lokasi:</b> 26. Penjara Kalisosok<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_1f19bd7ae341adf3e66471509ddecc53.setContent(html_852758d5254604fff11806beba4b152a);
+            
+        
+
+        marker_56833969d570b0e03a00bc12c4b114bb.bindPopup(popup_1f19bd7ae341adf3e66471509ddecc53)
+        ;
+
+        
+    
+    
+                marker_56833969d570b0e03a00bc12c4b114bb.setIcon(icon_6be860f2096ca89364fa5a720585a59f);
+            
+    
+            var marker_2a56612edf09f0d732ce3cd2ecec98a9 = L.marker(
+                [-7.3381, 112.7148],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_150048040ae7aa44045e2c453abc681b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e27\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_2a56612edf09f0d732ce3cd2ecec98a9.setIcon(div_icon_150048040ae7aa44045e2c453abc681b);
+            
+    
+            var marker_988f430a51db5bf6526de2f32fcf3500 = L.marker(
+                [-7.3381, 112.7148],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_6ec50c1ce6b69a0fe30b5a9db995354c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67b4721487f87a451e76bfa9a90e497a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e7eb6e62e7ae28f21b65ac61a04579ba = $(`<div id="html_e7eb6e62e7ae28f21b65ac61a04579ba" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 27</b><br>         <b>Lokasi:</b> 27. Masjid Nasional Al-Akbar<br>         <b>Elevasi:</b> 12.0 m     </div>     </div>`)[0];
+                popup_67b4721487f87a451e76bfa9a90e497a.setContent(html_e7eb6e62e7ae28f21b65ac61a04579ba);
+            
+        
+
+        marker_988f430a51db5bf6526de2f32fcf3500.bindPopup(popup_67b4721487f87a451e76bfa9a90e497a)
+        ;
+
+        
+    
+    
+                marker_988f430a51db5bf6526de2f32fcf3500.setIcon(icon_6ec50c1ce6b69a0fe30b5a9db995354c);
+            
+    
+            var marker_fd2c182a461db547f59345070c7d914e = L.marker(
+                [-7.2515, 112.7964],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_8d3331337a5305fb7513d849684a9e84 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e28\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_fd2c182a461db547f59345070c7d914e.setIcon(div_icon_8d3331337a5305fb7513d849684a9e84);
+            
+    
+            var marker_c1b0b18d62d5e7544a0ed80c3be89a82 = L.marker(
+                [-7.2515, 112.7964],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_a4e510817bd605bbff740adbfaeeed9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9f1f9d6f16767ef86cb8ac98cfaf95f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a38d24490c40648c95f773b7860a53a0 = $(`<div id="html_a38d24490c40648c95f773b7860a53a0" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 28</b><br>         <b>Lokasi:</b> 28. Jembatan Suroboyo (Kenjeran)<br>         <b>Elevasi:</b> 2.0 m     </div>     </div>`)[0];
+                popup_b9f1f9d6f16767ef86cb8ac98cfaf95f.setContent(html_a38d24490c40648c95f773b7860a53a0);
+            
+        
+
+        marker_c1b0b18d62d5e7544a0ed80c3be89a82.bindPopup(popup_b9f1f9d6f16767ef86cb8ac98cfaf95f)
+        ;
+
+        
+    
+    
+                marker_c1b0b18d62d5e7544a0ed80c3be89a82.setIcon(icon_a4e510817bd605bbff740adbfaeeed9a);
+            
+    
+            var marker_f17e4354a0d9f53a690c984ddd95d2ef = L.marker(
+                [-7.2736, 112.7441],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_c4725023cf61de1cce4b9ee060b11a6d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e29\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_f17e4354a0d9f53a690c984ddd95d2ef.setIcon(div_icon_c4725023cf61de1cce4b9ee060b11a6d);
+            
+    
+            var marker_3b88bd507f7f91ae0f50ceb5f8f14323 = L.marker(
+                [-7.2736, 112.7441],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_4ce747caaa3a35794a0ef17ee6b32874 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dbae922a964ffef7032cf1a911ae6ce = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f607c5835100c421896526f253be1481 = $(`<div id="html_f607c5835100c421896526f253be1481" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 29</b><br>         <b>Lokasi:</b> 29. Monumen Jenderal Sudirman<br>         <b>Elevasi:</b> 8.0 m     </div>     </div>`)[0];
+                popup_5dbae922a964ffef7032cf1a911ae6ce.setContent(html_f607c5835100c421896526f253be1481);
+            
+        
+
+        marker_3b88bd507f7f91ae0f50ceb5f8f14323.bindPopup(popup_5dbae922a964ffef7032cf1a911ae6ce)
+        ;
+
+        
+    
+    
+                marker_3b88bd507f7f91ae0f50ceb5f8f14323.setIcon(icon_4ce747caaa3a35794a0ef17ee6b32874);
+            
+    
+            var marker_b9f189960c2afcbc3309f4ff01622686 = L.marker(
+                [-7.2384, 112.7412],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_4d22f7932022cd807feacb95915460fb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e30\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_b9f189960c2afcbc3309f4ff01622686.setIcon(div_icon_4d22f7932022cd807feacb95915460fb);
+            
+    
+            var marker_7e1007657453fb1077925e2b46827f98 = L.marker(
+                [-7.2384, 112.7412],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_22b716f3e25912a7f5045c06f2aca7e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e62d547db8dfc28e537223f8c09daaf9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c961c73b1417928a1a4ac675a4b48e5e = $(`<div id="html_c961c73b1417928a1a4ac675a4b48e5e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 30</b><br>         <b>Lokasi:</b> 30. Kawasan Kota Tua Kembang Jepun<br>         <b>Elevasi:</b> 6.0 m     </div>     </div>`)[0];
+                popup_e62d547db8dfc28e537223f8c09daaf9.setContent(html_c961c73b1417928a1a4ac675a4b48e5e);
+            
+        
+
+        marker_7e1007657453fb1077925e2b46827f98.bindPopup(popup_e62d547db8dfc28e537223f8c09daaf9)
+        ;
+
+        
+    
+    
+                marker_7e1007657453fb1077925e2b46827f98.setIcon(icon_22b716f3e25912a7f5045c06f2aca7e2);
+            
+    
+            var marker_6cf61b5de423370ad71249ed678ae3c1 = L.marker(
+                [-7.2325, 112.7291],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var div_icon_cfb4a32811d5a3a4fc0dcddc14c49407 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; color: white; background-color: blue; border-radius: 50%; width: 20px; height: 20px; text-align: center; line-height: 20px; font-weight: bold; border: 1px solid black;\"\u003e31\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [7, 20],
+  "className": "empty",
+});
+        
+    
+                marker_6cf61b5de423370ad71249ed678ae3c1.setIcon(div_icon_cfb4a32811d5a3a4fc0dcddc14c49407);
+            
+    
+            var marker_6f7ad5c68bd6532ffcc3aea95ec48b67 = L.marker(
+                [-7.2325, 112.7291],
+                {
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+    
+            var icon_e6f38be3687d0ae31e15cb89cd82a16a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdd36067742fb5dd368aaf19538cdeac = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_16d07f7c97be01762895196cda0a9606 = $(`<div id="html_16d07f7c97be01762895196cda0a9606" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 150px;'>         <b>No. 31</b><br>         <b>Lokasi:</b> 31. Pura Agung Jagat Karana<br>         <b>Elevasi:</b> 5.0 m     </div>     </div>`)[0];
+                popup_fdd36067742fb5dd368aaf19538cdeac.setContent(html_16d07f7c97be01762895196cda0a9606);
+            
+        
+
+        marker_6f7ad5c68bd6532ffcc3aea95ec48b67.bindPopup(popup_fdd36067742fb5dd368aaf19538cdeac)
+        ;
+
+        
+    
+    
+                marker_6f7ad5c68bd6532ffcc3aea95ec48b67.setIcon(icon_e6f38be3687d0ae31e15cb89cd82a16a);
+            
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Expand",
+  "titleCancel": "Exit",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_cb91915b5befcece955b81556a7c7abc);
+        
+</script>
+</html>
