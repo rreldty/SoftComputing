@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf51d0ef30e41b30b3adea0411f8cf30 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf51d0ef30e41b30b3adea0411f8cf30" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf51d0ef30e41b30b3adea0411f8cf30 = L.map(
+                "map_bf51d0ef30e41b30b3adea0411f8cf30",
+                {
+                    center: [-7.262015, 112.739727],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+
+            
+
+        
+    
+            var tile_layer_1c903c89adbd095d9145079ce74d4cfb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1c903c89adbd095d9145079ce74d4cfb.addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var marker_8eeb63ad3df726d68aee63961732dad5 = L.marker(
+                [-7.262015, 112.739727],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_c90d3644b41b56a2fca0f6fe7789aa5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29e0900b36d879522c36a38afbb9e1c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22027d96bc6476b8340bb2fe08ea56aa = $(`<div id="html_22027d96bc6476b8340bb2fe08ea56aa" style="width: 100.0%; height: 100.0%;"><b>Hotel Sheraton Surabaya</b><br>Kategori: Titik Start/Finish (Depot)</div>`)[0];
+                popup_29e0900b36d879522c36a38afbb9e1c0.setContent(html_22027d96bc6476b8340bb2fe08ea56aa);
+            
+        
+
+        marker_8eeb63ad3df726d68aee63961732dad5.bindPopup(popup_29e0900b36d879522c36a38afbb9e1c0)
+        ;
+
+        
+    
+    
+            marker_8eeb63ad3df726d68aee63961732dad5.bindTooltip(
+                `<div>
+                     Hotel Sheraton Surabaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8eeb63ad3df726d68aee63961732dad5.setIcon(icon_c90d3644b41b56a2fca0f6fe7789aa5a);
+            
+    
+            var marker_3a18185e41d77c6eccfcb3d606fb47bf = L.marker(
+                [-7.26359, 112.745317],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_182cd00e50f2d691be8a061245140cf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c1a5fdf405e2ca5e167e45e880a4900 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e2523c9bad3f0eb279eeef38bf184a0 = $(`<div id="html_5e2523c9bad3f0eb279eeef38bf184a0" style="width: 100.0%; height: 100.0%;"><b>Alun-Alun Surabaya</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_7c1a5fdf405e2ca5e167e45e880a4900.setContent(html_5e2523c9bad3f0eb279eeef38bf184a0);
+            
+        
+
+        marker_3a18185e41d77c6eccfcb3d606fb47bf.bindPopup(popup_7c1a5fdf405e2ca5e167e45e880a4900)
+        ;
+
+        
+    
+    
+            marker_3a18185e41d77c6eccfcb3d606fb47bf.bindTooltip(
+                `<div>
+                     Alun-Alun Surabaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a18185e41d77c6eccfcb3d606fb47bf.setIcon(icon_182cd00e50f2d691be8a061245140cf5);
+            
+    
+            var marker_4b1ba1d2620ca11e9ec639ec58df14a1 = L.marker(
+                [-7.25935, 112.738873],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_d290996199cb413e33f3a11e7cb8ca9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0822d3352e93d6b14ff57a9bc29c9dff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_797fd0fa37eea7e7e62a61e7a0f87f11 = $(`<div id="html_797fd0fa37eea7e7e62a61e7a0f87f11" style="width: 100.0%; height: 100.0%;"><b>Jalan Tunjungan</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_0822d3352e93d6b14ff57a9bc29c9dff.setContent(html_797fd0fa37eea7e7e62a61e7a0f87f11);
+            
+        
+
+        marker_4b1ba1d2620ca11e9ec639ec58df14a1.bindPopup(popup_0822d3352e93d6b14ff57a9bc29c9dff)
+        ;
+
+        
+    
+    
+            marker_4b1ba1d2620ca11e9ec639ec58df14a1.bindTooltip(
+                `<div>
+                     Jalan Tunjungan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b1ba1d2620ca11e9ec639ec58df14a1.setIcon(icon_d290996199cb413e33f3a11e7cb8ca9f);
+            
+    
+            var marker_6c74fbf6c4e2c5b6e19e734ca76f1e4e = L.marker(
+                [-7.260158, 112.739698],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_92824e5435286b094b826ccd5c9bc106 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8eccdcf2008ee99b4a2fd30531e5f43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fe795b903598d5ac9418a1e5ae99150 = $(`<div id="html_4fe795b903598d5ac9418a1e5ae99150" style="width: 100.0%; height: 100.0%;"><b>Hotel Majapahit</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_f8eccdcf2008ee99b4a2fd30531e5f43.setContent(html_4fe795b903598d5ac9418a1e5ae99150);
+            
+        
+
+        marker_6c74fbf6c4e2c5b6e19e734ca76f1e4e.bindPopup(popup_f8eccdcf2008ee99b4a2fd30531e5f43)
+        ;
+
+        
+    
+    
+            marker_6c74fbf6c4e2c5b6e19e734ca76f1e4e.bindTooltip(
+                `<div>
+                     Hotel Majapahit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c74fbf6c4e2c5b6e19e734ca76f1e4e.setIcon(icon_92824e5435286b094b826ccd5c9bc106);
+            
+    
+            var marker_1305f7728f137a0af5cc77f9eec80dfc = L.marker(
+                [-7.262953, 112.743378],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_a5c19a8b9207344570ca36a8d4c86ea2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e91e86f18ed426c1dc8ca7a1b256b95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_567bd8714f3a647018e309c01f14e699 = $(`<div id="html_567bd8714f3a647018e309c01f14e699" style="width: 100.0%; height: 100.0%;"><b>Gedung Negara Grahadi</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_8e91e86f18ed426c1dc8ca7a1b256b95.setContent(html_567bd8714f3a647018e309c01f14e699);
+            
+        
+
+        marker_1305f7728f137a0af5cc77f9eec80dfc.bindPopup(popup_8e91e86f18ed426c1dc8ca7a1b256b95)
+        ;
+
+        
+    
+    
+            marker_1305f7728f137a0af5cc77f9eec80dfc.bindTooltip(
+                `<div>
+                     Gedung Negara Grahadi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1305f7728f137a0af5cc77f9eec80dfc.setIcon(icon_a5c19a8b9207344570ca36a8d4c86ea2);
+            
+    
+            var marker_482c393b46f6e08bf88daabda18d650b = L.marker(
+                [-7.267778, 112.744399],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_960221403ad4887dd8a58ff26b5e3244 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e34c52c6d4fb78ed2e0eff7f59d817e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5ab40f597a5ce0dee510f1aa444e6ba = $(`<div id="html_f5ab40f597a5ce0dee510f1aa444e6ba" style="width: 100.0%; height: 100.0%;"><b>Monumen Bambu Runcing</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_e34c52c6d4fb78ed2e0eff7f59d817e3.setContent(html_f5ab40f597a5ce0dee510f1aa444e6ba);
+            
+        
+
+        marker_482c393b46f6e08bf88daabda18d650b.bindPopup(popup_e34c52c6d4fb78ed2e0eff7f59d817e3)
+        ;
+
+        
+    
+    
+            marker_482c393b46f6e08bf88daabda18d650b.bindTooltip(
+                `<div>
+                     Monumen Bambu Runcing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_482c393b46f6e08bf88daabda18d650b.setIcon(icon_960221403ad4887dd8a58ff26b5e3244);
+            
+    
+            var marker_29766cd9ad647b5e92250b0d043e0490 = L.marker(
+                [-7.264617, 112.742802],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_a4f498656c1c8717ae3824f7f51b1990 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_995782e18d893acd73d15690c331b206 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_502629af380303406ef00594b019de74 = $(`<div id="html_502629af380303406ef00594b019de74" style="width: 100.0%; height: 100.0%;"><b>Taman Apsari</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_995782e18d893acd73d15690c331b206.setContent(html_502629af380303406ef00594b019de74);
+            
+        
+
+        marker_29766cd9ad647b5e92250b0d043e0490.bindPopup(popup_995782e18d893acd73d15690c331b206)
+        ;
+
+        
+    
+    
+            marker_29766cd9ad647b5e92250b0d043e0490.bindTooltip(
+                `<div>
+                     Taman Apsari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29766cd9ad647b5e92250b0d043e0490.setIcon(icon_a4f498656c1c8717ae3824f7f51b1990);
+            
+    
+            var marker_aa6cb67faf11037f4283abac9d3e62be = L.marker(
+                [-7.265591, 112.750327],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_0bb2e892cf604a4e49e98bbb5ac0e3eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7b71a2fb12b1f8db572cb03133c4bb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f53632b69a52cd1e89eeb41ddacaf437 = $(`<div id="html_f53632b69a52cd1e89eeb41ddacaf437" style="width: 100.0%; height: 100.0%;"><b>Monumen Kapal Selam</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_c7b71a2fb12b1f8db572cb03133c4bb8.setContent(html_f53632b69a52cd1e89eeb41ddacaf437);
+            
+        
+
+        marker_aa6cb67faf11037f4283abac9d3e62be.bindPopup(popup_c7b71a2fb12b1f8db572cb03133c4bb8)
+        ;
+
+        
+    
+    
+            marker_aa6cb67faf11037f4283abac9d3e62be.bindTooltip(
+                `<div>
+                     Monumen Kapal Selam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa6cb67faf11037f4283abac9d3e62be.setIcon(icon_0bb2e892cf604a4e49e98bbb5ac0e3eb);
+            
+    
+            var marker_85dbc8c5263d088e2b71271c54ad7780 = L.marker(
+                [-7.264877, 112.748545],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_ae119d4c43a778684d165f1508b308f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba459e638de7e6236997dc168efda964 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3a7899a09fa700885124778135d5ccd = $(`<div id="html_c3a7899a09fa700885124778135d5ccd" style="width: 100.0%; height: 100.0%;"><b>Plaza Surabaya</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_ba459e638de7e6236997dc168efda964.setContent(html_c3a7899a09fa700885124778135d5ccd);
+            
+        
+
+        marker_85dbc8c5263d088e2b71271c54ad7780.bindPopup(popup_ba459e638de7e6236997dc168efda964)
+        ;
+
+        
+    
+    
+            marker_85dbc8c5263d088e2b71271c54ad7780.bindTooltip(
+                `<div>
+                     Plaza Surabaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85dbc8c5263d088e2b71271c54ad7780.setIcon(icon_ae119d4c43a778684d165f1508b308f1);
+            
+    
+            var marker_72c5803467aff28cb6975efae838d386 = L.marker(
+                [-7.259885, 112.745484],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_d4dc4a1f4160a93687e3d2f1cd9c6394 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e2b741f33c31d2d10dc7094bdfccd34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_785c818a06d9612adc2f1e4744bd3cfd = $(`<div id="html_785c818a06d9612adc2f1e4744bd3cfd" style="width: 100.0%; height: 100.0%;"><b>Taman Prestasi</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_9e2b741f33c31d2d10dc7094bdfccd34.setContent(html_785c818a06d9612adc2f1e4744bd3cfd);
+            
+        
+
+        marker_72c5803467aff28cb6975efae838d386.bindPopup(popup_9e2b741f33c31d2d10dc7094bdfccd34)
+        ;
+
+        
+    
+    
+            marker_72c5803467aff28cb6975efae838d386.bindTooltip(
+                `<div>
+                     Taman Prestasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72c5803467aff28cb6975efae838d386.setIcon(icon_d4dc4a1f4160a93687e3d2f1cd9c6394);
+            
+    
+            var marker_d9aa1951b5d670aeb98d1edda36744e7 = L.marker(
+                [-7.256157, 112.736453],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_0cb9a6d616ad86321e4a34d2ec78e21e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdd17c4e7d6d82c8e58d863b074c7eb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fc4e4cc8212c6542417379dedaacbd1 = $(`<div id="html_0fc4e4cc8212c6542417379dedaacbd1" style="width: 100.0%; height: 100.0%;"><b>Gedung Siola</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_fdd17c4e7d6d82c8e58d863b074c7eb1.setContent(html_0fc4e4cc8212c6542417379dedaacbd1);
+            
+        
+
+        marker_d9aa1951b5d670aeb98d1edda36744e7.bindPopup(popup_fdd17c4e7d6d82c8e58d863b074c7eb1)
+        ;
+
+        
+    
+    
+            marker_d9aa1951b5d670aeb98d1edda36744e7.bindTooltip(
+                `<div>
+                     Gedung Siola
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9aa1951b5d670aeb98d1edda36744e7.setIcon(icon_0cb9a6d616ad86321e4a34d2ec78e21e);
+            
+    
+            var marker_7d6fbf8365c9f4dec1c9ccf31ea70230 = L.marker(
+                [-7.255906, 112.733742],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_f3c38c0b0ed39f373ccf57592fe88bef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f9577c715bac403939e23087e14f674 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aedd4c613a07507644b93eaaae31274f = $(`<div id="html_aedd4c613a07507644b93eaaae31274f" style="width: 100.0%; height: 100.0%;"><b>Pasar Blauran</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_3f9577c715bac403939e23087e14f674.setContent(html_aedd4c613a07507644b93eaaae31274f);
+            
+        
+
+        marker_7d6fbf8365c9f4dec1c9ccf31ea70230.bindPopup(popup_3f9577c715bac403939e23087e14f674)
+        ;
+
+        
+    
+    
+            marker_7d6fbf8365c9f4dec1c9ccf31ea70230.bindTooltip(
+                `<div>
+                     Pasar Blauran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d6fbf8365c9f4dec1c9ccf31ea70230.setIcon(icon_f3c38c0b0ed39f373ccf57592fe88bef);
+            
+    
+            var marker_cbf75d4c43bed0450a26bf315f27c292 = L.marker(
+                [-7.265324, 112.740889],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_d8adda3367e85e346adda4fd449767a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c08327ba1844c4d9ef97e0d85b4550c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d76175d15e016f6d5dbd41386ebf418e = $(`<div id="html_d76175d15e016f6d5dbd41386ebf418e" style="width: 100.0%; height: 100.0%;"><b>Jalan Basuki Rahmat</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_3c08327ba1844c4d9ef97e0d85b4550c.setContent(html_d76175d15e016f6d5dbd41386ebf418e);
+            
+        
+
+        marker_cbf75d4c43bed0450a26bf315f27c292.bindPopup(popup_3c08327ba1844c4d9ef97e0d85b4550c)
+        ;
+
+        
+    
+    
+            marker_cbf75d4c43bed0450a26bf315f27c292.bindTooltip(
+                `<div>
+                     Jalan Basuki Rahmat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbf75d4c43bed0450a26bf315f27c292.setIcon(icon_d8adda3367e85e346adda4fd449767a5);
+            
+    
+            var marker_c868ff658d9be6b2acbe23a9046c2b6e = L.marker(
+                [-7.245814, 112.737784],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_2f9cb1d362e6239147883619573550a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4e94af82a32ce4f7f7aebb946c65a5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c05e3c9b28d6c4a388c687496def56a = $(`<div id="html_1c05e3c9b28d6c4a388c687496def56a" style="width: 100.0%; height: 100.0%;"><b>Monumen Tugu Pahlawan</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_a4e94af82a32ce4f7f7aebb946c65a5d.setContent(html_1c05e3c9b28d6c4a388c687496def56a);
+            
+        
+
+        marker_c868ff658d9be6b2acbe23a9046c2b6e.bindPopup(popup_a4e94af82a32ce4f7f7aebb946c65a5d)
+        ;
+
+        
+    
+    
+            marker_c868ff658d9be6b2acbe23a9046c2b6e.bindTooltip(
+                `<div>
+                     Monumen Tugu Pahlawan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c868ff658d9be6b2acbe23a9046c2b6e.setIcon(icon_2f9cb1d362e6239147883619573550a4);
+            
+    
+            var marker_67b25f7a225c6a61943d88974643f9be = L.marker(
+                [-7.2585, 112.7295],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_b57826abe400fb53b25b2370b003ae5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efddbf913f31e717ae2400bf978db274 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd0717538e094835fee98e81c2ee85fa = $(`<div id="html_dd0717538e094835fee98e81c2ee85fa" style="width: 100.0%; height: 100.0%;"><b>Jalan Kedungdoro</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_efddbf913f31e717ae2400bf978db274.setContent(html_dd0717538e094835fee98e81c2ee85fa);
+            
+        
+
+        marker_67b25f7a225c6a61943d88974643f9be.bindPopup(popup_efddbf913f31e717ae2400bf978db274)
+        ;
+
+        
+    
+    
+            marker_67b25f7a225c6a61943d88974643f9be.bindTooltip(
+                `<div>
+                     Jalan Kedungdoro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67b25f7a225c6a61943d88974643f9be.setIcon(icon_b57826abe400fb53b25b2370b003ae5f);
+            
+    
+            var marker_b2192d3133cc186ed9225ce648d237eb = L.marker(
+                [-7.2541, 112.7462],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_7538e06e8a18b079db5413829ad9cda1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efe3bef73dcf50afee8a9d29caa0eb9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_992b70c6a410da3c8ea71087dbca3bbd = $(`<div id="html_992b70c6a410da3c8ea71087dbca3bbd" style="width: 100.0%; height: 100.0%;"><b>Taman Ekspresi</b><br>Daerah: Pusat<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_efe3bef73dcf50afee8a9d29caa0eb9b.setContent(html_992b70c6a410da3c8ea71087dbca3bbd);
+            
+        
+
+        marker_b2192d3133cc186ed9225ce648d237eb.bindPopup(popup_efe3bef73dcf50afee8a9d29caa0eb9b)
+        ;
+
+        
+    
+    
+            marker_b2192d3133cc186ed9225ce648d237eb.bindTooltip(
+                `<div>
+                     Taman Ekspresi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2192d3133cc186ed9225ce648d237eb.setIcon(icon_7538e06e8a18b079db5413829ad9cda1);
+            
+    
+            var marker_ace50c86726d5794fdd486768e994446 = L.marker(
+                [-7.2841, 112.6912],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_656956fba8145805f2c7e1e07353bfce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f95a7a69a878937b4925e702850eae1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2600a567da8c1264d8bb971b65ff0a4 = $(`<div id="html_e2600a567da8c1264d8bb971b65ff0a4" style="width: 100.0%; height: 100.0%;"><b>Jalan Raya Darmo Permai</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_6f95a7a69a878937b4925e702850eae1.setContent(html_e2600a567da8c1264d8bb971b65ff0a4);
+            
+        
+
+        marker_ace50c86726d5794fdd486768e994446.bindPopup(popup_6f95a7a69a878937b4925e702850eae1)
+        ;
+
+        
+    
+    
+            marker_ace50c86726d5794fdd486768e994446.bindTooltip(
+                `<div>
+                     Jalan Raya Darmo Permai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ace50c86726d5794fdd486768e994446.setIcon(icon_656956fba8145805f2c7e1e07353bfce);
+            
+    
+            var marker_ac8d6f287a9379da53eace3d46c04684 = L.marker(
+                [-7.28954, 112.684025],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_f43639d9403cdf373bfb83afaef8ad8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a488aa04c4b8b29568391da63488c74f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96c6c98f625b6b3e62e4ed51b0a66e86 = $(`<div id="html_96c6c98f625b6b3e62e4ed51b0a66e86" style="width: 100.0%; height: 100.0%;"><b>Graha Famili Timur</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_a488aa04c4b8b29568391da63488c74f.setContent(html_96c6c98f625b6b3e62e4ed51b0a66e86);
+            
+        
+
+        marker_ac8d6f287a9379da53eace3d46c04684.bindPopup(popup_a488aa04c4b8b29568391da63488c74f)
+        ;
+
+        
+    
+    
+            marker_ac8d6f287a9379da53eace3d46c04684.bindTooltip(
+                `<div>
+                     Graha Famili Timur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac8d6f287a9379da53eace3d46c04684.setIcon(icon_f43639d9403cdf373bfb83afaef8ad8e);
+            
+    
+            var marker_4cf6de2e72df5c2e901afb8f53ab5b0b = L.marker(
+                [-7.287814, 112.68052],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_f40b7dc756ba78c759a10d99090dd3fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a02ee31d9716023d8fd69f4818061947 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52b5ac2580adcd1d57d2f6f266cd6aeb = $(`<div id="html_52b5ac2580adcd1d57d2f6f266cd6aeb" style="width: 100.0%; height: 100.0%;"><b>Spazio Jalan Yono Soewoyo</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_a02ee31d9716023d8fd69f4818061947.setContent(html_52b5ac2580adcd1d57d2f6f266cd6aeb);
+            
+        
+
+        marker_4cf6de2e72df5c2e901afb8f53ab5b0b.bindPopup(popup_a02ee31d9716023d8fd69f4818061947)
+        ;
+
+        
+    
+    
+            marker_4cf6de2e72df5c2e901afb8f53ab5b0b.bindTooltip(
+                `<div>
+                     Spazio Jalan Yono Soewoyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4cf6de2e72df5c2e901afb8f53ab5b0b.setIcon(icon_f40b7dc756ba78c759a10d99090dd3fc);
+            
+    
+            var marker_9ec76fb78e21ba8158ffe117d25a9584 = L.marker(
+                [-7.284241, 112.682142],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_94d81009e5614c5ab97a4d775b055cd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b72df6f16a3ff1afe17b3719507b0a38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e1112062bfaefa7df7df121956ef8c9 = $(`<div id="html_7e1112062bfaefa7df7df121956ef8c9" style="width: 100.0%; height: 100.0%;"><b>Plaza Segi Delapan</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_b72df6f16a3ff1afe17b3719507b0a38.setContent(html_7e1112062bfaefa7df7df121956ef8c9);
+            
+        
+
+        marker_9ec76fb78e21ba8158ffe117d25a9584.bindPopup(popup_b72df6f16a3ff1afe17b3719507b0a38)
+        ;
+
+        
+    
+    
+            marker_9ec76fb78e21ba8158ffe117d25a9584.bindTooltip(
+                `<div>
+                     Plaza Segi Delapan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ec76fb78e21ba8158ffe117d25a9584.setIcon(icon_94d81009e5614c5ab97a4d775b055cd4);
+            
+    
+            var marker_0898ee83ae1363629c84b3d3b3d7ce02 = L.marker(
+                [-7.2848, 112.6955],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_0a8bc41d7c01d416d6b62ba50759e1be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ec8fa254c45d674901b8565e857e53b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_646079beccd699b0759b47604c23ed8e = $(`<div id="html_646079beccd699b0759b47604c23ed8e" style="width: 100.0%; height: 100.0%;"><b>Jalan HR Muhammad</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_1ec8fa254c45d674901b8565e857e53b.setContent(html_646079beccd699b0759b47604c23ed8e);
+            
+        
+
+        marker_0898ee83ae1363629c84b3d3b3d7ce02.bindPopup(popup_1ec8fa254c45d674901b8565e857e53b)
+        ;
+
+        
+    
+    
+            marker_0898ee83ae1363629c84b3d3b3d7ce02.bindTooltip(
+                `<div>
+                     Jalan HR Muhammad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0898ee83ae1363629c84b3d3b3d7ce02.setIcon(icon_0a8bc41d7c01d416d6b62ba50759e1be);
+            
+    
+            var marker_46f6dfeca2c767c45174b201d081c99a = L.marker(
+                [-7.2875, 112.689],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_3030308207259548c969428b03603c11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33cd8efc70c0b3287732dd9a53501c63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daf7bac833f1189e7fe3ea657d2bba13 = $(`<div id="html_daf7bac833f1189e7fe3ea657d2bba13" style="width: 100.0%; height: 100.0%;"><b>Taman Pradah Kalikendal</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_33cd8efc70c0b3287732dd9a53501c63.setContent(html_daf7bac833f1189e7fe3ea657d2bba13);
+            
+        
+
+        marker_46f6dfeca2c767c45174b201d081c99a.bindPopup(popup_33cd8efc70c0b3287732dd9a53501c63)
+        ;
+
+        
+    
+    
+            marker_46f6dfeca2c767c45174b201d081c99a.bindTooltip(
+                `<div>
+                     Taman Pradah Kalikendal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_46f6dfeca2c767c45174b201d081c99a.setIcon(icon_3030308207259548c969428b03603c11);
+            
+    
+            var marker_36aaaf441fb9fed9ccb6c87e7e22419b = L.marker(
+                [-7.262, 112.701],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_211685591a2053cd54bb29e3ab6ab0d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06a49645f8331411d7add35e4c24ea87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61f6c466456f8ece4be8a287549bc455 = $(`<div id="html_61f6c466456f8ece4be8a287549bc455" style="width: 100.0%; height: 100.0%;"><b>Kawasan Sukomanunggal</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_06a49645f8331411d7add35e4c24ea87.setContent(html_61f6c466456f8ece4be8a287549bc455);
+            
+        
+
+        marker_36aaaf441fb9fed9ccb6c87e7e22419b.bindPopup(popup_06a49645f8331411d7add35e4c24ea87)
+        ;
+
+        
+    
+    
+            marker_36aaaf441fb9fed9ccb6c87e7e22419b.bindTooltip(
+                `<div>
+                     Kawasan Sukomanunggal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36aaaf441fb9fed9ccb6c87e7e22419b.setIcon(icon_211685591a2053cd54bb29e3ab6ab0d4);
+            
+    
+            var marker_75dbfb02b07506a6833a2821a585ba32 = L.marker(
+                [-7.2891, 112.705],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_074b2245fa6c63b785cca5a54730eb99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97dcba9a59f1f5b6960646983aa346da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_437203e7395790de669c85c2805afa68 = $(`<div id="html_437203e7395790de669c85c2805afa68" style="width: 100.0%; height: 100.0%;"><b>Jalan Raya Kupang Indah</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_97dcba9a59f1f5b6960646983aa346da.setContent(html_437203e7395790de669c85c2805afa68);
+            
+        
+
+        marker_75dbfb02b07506a6833a2821a585ba32.bindPopup(popup_97dcba9a59f1f5b6960646983aa346da)
+        ;
+
+        
+    
+    
+            marker_75dbfb02b07506a6833a2821a585ba32.bindTooltip(
+                `<div>
+                     Jalan Raya Kupang Indah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75dbfb02b07506a6833a2821a585ba32.setIcon(icon_074b2245fa6c63b785cca5a54730eb99);
+            
+    
+            var marker_aa490f58459467b9a660a6923170ca48 = L.marker(
+                [-7.2915, 112.712],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_15da50e5f01a5d638783e5cf4daea749 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_772b62189806082033df7e72fe2dabee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a45ca0c8e832b85631d323d93d630f6 = $(`<div id="html_2a45ca0c8e832b85631d323d93d630f6" style="width: 100.0%; height: 100.0%;"><b>Taman Makam Pahlawan Mayjen Sungkono</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_772b62189806082033df7e72fe2dabee.setContent(html_2a45ca0c8e832b85631d323d93d630f6);
+            
+        
+
+        marker_aa490f58459467b9a660a6923170ca48.bindPopup(popup_772b62189806082033df7e72fe2dabee)
+        ;
+
+        
+    
+    
+            marker_aa490f58459467b9a660a6923170ca48.bindTooltip(
+                `<div>
+                     Taman Makam Pahlawan Mayjen Sungkono
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa490f58459467b9a660a6923170ca48.setIcon(icon_15da50e5f01a5d638783e5cf4daea749);
+            
+    
+            var marker_938b786dcba748e0ae50f04f573673e6 = L.marker(
+                [-7.2912, 112.723],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_c072150eef5e08f845d896b9a6d1b9bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b10c6fa45cf3bf822a718635efbb6b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_157a26c158e6af15ac4040222aa7fb48 = $(`<div id="html_157a26c158e6af15ac4040222aa7fb48" style="width: 100.0%; height: 100.0%;"><b>Ciputra World Surabaya</b><br>Daerah: Barat<br><b>Cluster ID: 1</b></div>`)[0];
+                popup_8b10c6fa45cf3bf822a718635efbb6b1.setContent(html_157a26c158e6af15ac4040222aa7fb48);
+            
+        
+
+        marker_938b786dcba748e0ae50f04f573673e6.bindPopup(popup_8b10c6fa45cf3bf822a718635efbb6b1)
+        ;
+
+        
+    
+    
+            marker_938b786dcba748e0ae50f04f573673e6.bindTooltip(
+                `<div>
+                     Ciputra World Surabaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_938b786dcba748e0ae50f04f573673e6.setIcon(icon_c072150eef5e08f845d896b9a6d1b9bd);
+            
+    
+            var marker_335e857429e8a83c74f652a4b778165c = L.marker(
+                [-7.2681, 112.7582],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_74997c063fab7dbcf1ab6920e5a90e66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_387279af07370e3d9900d34960d33d11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02b665ef83e48c7cca39f7e683e1567b = $(`<div id="html_02b665ef83e48c7cca39f7e683e1567b" style="width: 100.0%; height: 100.0%;"><b>Kampus B Unair</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_387279af07370e3d9900d34960d33d11.setContent(html_02b665ef83e48c7cca39f7e683e1567b);
+            
+        
+
+        marker_335e857429e8a83c74f652a4b778165c.bindPopup(popup_387279af07370e3d9900d34960d33d11)
+        ;
+
+        
+    
+    
+            marker_335e857429e8a83c74f652a4b778165c.bindTooltip(
+                `<div>
+                     Kampus B Unair
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_335e857429e8a83c74f652a4b778165c.setIcon(icon_74997c063fab7dbcf1ab6920e5a90e66);
+            
+    
+            var marker_8f3d639ab2813700f4ff89644d45b536 = L.marker(
+                [-7.269, 112.765],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_1e9c3aed2ed3f8b9fbf9b27ae6ebab69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65d97198949dbd5c2b95c0c66962bf34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c76186505300320959ef431783e715eb = $(`<div id="html_c76186505300320959ef431783e715eb" style="width: 100.0%; height: 100.0%;"><b>Jalan Dharmahusada</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_65d97198949dbd5c2b95c0c66962bf34.setContent(html_c76186505300320959ef431783e715eb);
+            
+        
+
+        marker_8f3d639ab2813700f4ff89644d45b536.bindPopup(popup_65d97198949dbd5c2b95c0c66962bf34)
+        ;
+
+        
+    
+    
+            marker_8f3d639ab2813700f4ff89644d45b536.bindTooltip(
+                `<div>
+                     Jalan Dharmahusada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f3d639ab2813700f4ff89644d45b536.setIcon(icon_1e9c3aed2ed3f8b9fbf9b27ae6ebab69);
+            
+    
+            var marker_e63c93e1e511d427efe84d6348488552 = L.marker(
+                [-7.2725, 112.768],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_3d0076b0b17d2736763ce4d17679614b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f630202647ffba5a95ea155712ebbed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bc664718a55635b77a8a4af79b3cd6f = $(`<div id="html_8bc664718a55635b77a8a4af79b3cd6f" style="width: 100.0%; height: 100.0%;"><b>Taman Mojo</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_8f630202647ffba5a95ea155712ebbed.setContent(html_8bc664718a55635b77a8a4af79b3cd6f);
+            
+        
+
+        marker_e63c93e1e511d427efe84d6348488552.bindPopup(popup_8f630202647ffba5a95ea155712ebbed)
+        ;
+
+        
+    
+    
+            marker_e63c93e1e511d427efe84d6348488552.bindTooltip(
+                `<div>
+                     Taman Mojo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e63c93e1e511d427efe84d6348488552.setIcon(icon_3d0076b0b17d2736763ce4d17679614b);
+            
+    
+            var marker_55a2f9a60494a083ca96d61909cde7d6 = L.marker(
+                [-7.2758, 112.766],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_6e72c8f511d3ee38b84c19e63528163b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d42a48db39f096fa1286ec30c001b14b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_919534e7e6861d32c651852037359e6e = $(`<div id="html_919534e7e6861d32c651852037359e6e" style="width: 100.0%; height: 100.0%;"><b>Jalan Manyar Kertoarjo</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_d42a48db39f096fa1286ec30c001b14b.setContent(html_919534e7e6861d32c651852037359e6e);
+            
+        
+
+        marker_55a2f9a60494a083ca96d61909cde7d6.bindPopup(popup_d42a48db39f096fa1286ec30c001b14b)
+        ;
+
+        
+    
+    
+            marker_55a2f9a60494a083ca96d61909cde7d6.bindTooltip(
+                `<div>
+                     Jalan Manyar Kertoarjo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55a2f9a60494a083ca96d61909cde7d6.setIcon(icon_6e72c8f511d3ee38b84c19e63528163b);
+            
+    
+            var marker_d1545c64919514f03cac5c786e9233a1 = L.marker(
+                [-7.2662, 112.753],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_0f2a1546b43cc73c465be9dd66e45437 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45523b2a2a0a54bd0a14a773e019e6ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e92f829c0565e60524a0fbe195357f1f = $(`<div id="html_e92f829c0565e60524a0fbe195357f1f" style="width: 100.0%; height: 100.0%;"><b>Kampus A Unair Kedokteran</b><br>Daerah: Timur<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_45523b2a2a0a54bd0a14a773e019e6ed.setContent(html_e92f829c0565e60524a0fbe195357f1f);
+            
+        
+
+        marker_d1545c64919514f03cac5c786e9233a1.bindPopup(popup_45523b2a2a0a54bd0a14a773e019e6ed)
+        ;
+
+        
+    
+    
+            marker_d1545c64919514f03cac5c786e9233a1.bindTooltip(
+                `<div>
+                     Kampus A Unair Kedokteran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1545c64919514f03cac5c786e9233a1.setIcon(icon_0f2a1546b43cc73c465be9dd66e45437);
+            
+    
+            var marker_922c4ea835613903bf81ba87485d0477 = L.marker(
+                [-7.2762, 112.775],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_5ff8f961d40d202ba248b1add097ef72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31ce1571b263b03165fe7020815b6eef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88468406f360f9d4b7835877cd2a429c = $(`<div id="html_88468406f360f9d4b7835877cd2a429c" style="width: 100.0%; height: 100.0%;"><b>Jalan Kertajaya Indah</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_31ce1571b263b03165fe7020815b6eef.setContent(html_88468406f360f9d4b7835877cd2a429c);
+            
+        
+
+        marker_922c4ea835613903bf81ba87485d0477.bindPopup(popup_31ce1571b263b03165fe7020815b6eef)
+        ;
+
+        
+    
+    
+            marker_922c4ea835613903bf81ba87485d0477.bindTooltip(
+                `<div>
+                     Jalan Kertajaya Indah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_922c4ea835613903bf81ba87485d0477.setIcon(icon_5ff8f961d40d202ba248b1add097ef72);
+            
+    
+            var marker_a78f80cd69ed86381c8314d0eb017de6 = L.marker(
+                [-7.296214, 112.76054],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_e3cda9a737ab4ac1d44050bc5720c4bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca50d19af526c2fe087116cf3d3574bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_137c5a0bdc32fa7bc3db170bcf0cb55a = $(`<div id="html_137c5a0bdc32fa7bc3db170bcf0cb55a" style="width: 100.0%; height: 100.0%;"><b>Taman Flora Bratang</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_ca50d19af526c2fe087116cf3d3574bd.setContent(html_137c5a0bdc32fa7bc3db170bcf0cb55a);
+            
+        
+
+        marker_a78f80cd69ed86381c8314d0eb017de6.bindPopup(popup_ca50d19af526c2fe087116cf3d3574bd)
+        ;
+
+        
+    
+    
+            marker_a78f80cd69ed86381c8314d0eb017de6.bindTooltip(
+                `<div>
+                     Taman Flora Bratang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a78f80cd69ed86381c8314d0eb017de6.setIcon(icon_e3cda9a737ab4ac1d44050bc5720c4bd);
+            
+    
+            var marker_b3d231b2b9ffc5ca5ad8715e63dcdc67 = L.marker(
+                [-7.29584, 112.759215],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_73a9c383719330bbc0bd859c6b4a77af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ceafe1810d8a067fb9625377cae243f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac7aab222e4605b1aa80ec33a4679a3e = $(`<div id="html_ac7aab222e4605b1aa80ec33a4679a3e" style="width: 100.0%; height: 100.0%;"><b>Taman Kebun Bibit Bratang</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_4ceafe1810d8a067fb9625377cae243f.setContent(html_ac7aab222e4605b1aa80ec33a4679a3e);
+            
+        
+
+        marker_b3d231b2b9ffc5ca5ad8715e63dcdc67.bindPopup(popup_4ceafe1810d8a067fb9625377cae243f)
+        ;
+
+        
+    
+    
+            marker_b3d231b2b9ffc5ca5ad8715e63dcdc67.bindTooltip(
+                `<div>
+                     Taman Kebun Bibit Bratang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3d231b2b9ffc5ca5ad8715e63dcdc67.setIcon(icon_73a9c383719330bbc0bd859c6b4a77af);
+            
+    
+            var marker_c05d3b58d030b9d5abd361494cceeda2 = L.marker(
+                [-7.271, 112.761],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_c61d497e65183f413fe4f9f56fbfaf68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36fabfe8ec3d437ad1baa8e2c6edc968 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf2d31542f0cd051ef1dbfc53f9841ad = $(`<div id="html_cf2d31542f0cd051ef1dbfc53f9841ad" style="width: 100.0%; height: 100.0%;"><b>Jalan Karang Menur</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_36fabfe8ec3d437ad1baa8e2c6edc968.setContent(html_cf2d31542f0cd051ef1dbfc53f9841ad);
+            
+        
+
+        marker_c05d3b58d030b9d5abd361494cceeda2.bindPopup(popup_36fabfe8ec3d437ad1baa8e2c6edc968)
+        ;
+
+        
+    
+    
+            marker_c05d3b58d030b9d5abd361494cceeda2.bindTooltip(
+                `<div>
+                     Jalan Karang Menur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c05d3b58d030b9d5abd361494cceeda2.setIcon(icon_c61d497e65183f413fe4f9f56fbfaf68);
+            
+    
+            var marker_4e9ae82239228c3518877750b0eec447 = L.marker(
+                [-7.286, 112.772],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_77cf672fd0453241160b98ff5dd733ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d508d2a33d20d45947301affdfaef27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_544027aae778d5da8c6bba9ae69c4131 = $(`<div id="html_544027aae778d5da8c6bba9ae69c4131" style="width: 100.0%; height: 100.0%;"><b>Kawasan Menur Pumpungan</b><br>Daerah: Timur<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_0d508d2a33d20d45947301affdfaef27.setContent(html_544027aae778d5da8c6bba9ae69c4131);
+            
+        
+
+        marker_4e9ae82239228c3518877750b0eec447.bindPopup(popup_0d508d2a33d20d45947301affdfaef27)
+        ;
+
+        
+    
+    
+            marker_4e9ae82239228c3518877750b0eec447.bindTooltip(
+                `<div>
+                     Kawasan Menur Pumpungan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e9ae82239228c3518877750b0eec447.setIcon(icon_77cf672fd0453241160b98ff5dd733ae);
+            
+    
+            var marker_c1cd195349ec7b8bf2513a4ea1ec5296 = L.marker(
+                [-7.234812, 112.738145],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_be8946ef7fd9e23c3af9a4e500e603e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67ebfc4db272fac8e1248bca7c261035 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c05fdc2b9c66ff030db46ff1deea121e = $(`<div id="html_c05fdc2b9c66ff030db46ff1deea121e" style="width: 100.0%; height: 100.0%;"><b>Jembatan Merah Surabaya</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_67ebfc4db272fac8e1248bca7c261035.setContent(html_c05fdc2b9c66ff030db46ff1deea121e);
+            
+        
+
+        marker_c1cd195349ec7b8bf2513a4ea1ec5296.bindPopup(popup_67ebfc4db272fac8e1248bca7c261035)
+        ;
+
+        
+    
+    
+            marker_c1cd195349ec7b8bf2513a4ea1ec5296.bindTooltip(
+                `<div>
+                     Jembatan Merah Surabaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1cd195349ec7b8bf2513a4ea1ec5296.setIcon(icon_be8946ef7fd9e23c3af9a4e500e603e9);
+            
+    
+            var marker_80e71a25104940ee143d00b573cdcb71 = L.marker(
+                [-7.236112, 112.741215],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_5ad507fee64b2caa456a4920b6f89302 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a550858b911da0a10ed13a76371fb86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0933c0240fd3f0ec00bcc862f2976d3 = $(`<div id="html_d0933c0240fd3f0ec00bcc862f2976d3" style="width: 100.0%; height: 100.0%;"><b>Kya-Kya Kembang Jepun</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_1a550858b911da0a10ed13a76371fb86.setContent(html_d0933c0240fd3f0ec00bcc862f2976d3);
+            
+        
+
+        marker_80e71a25104940ee143d00b573cdcb71.bindPopup(popup_1a550858b911da0a10ed13a76371fb86)
+        ;
+
+        
+    
+    
+            marker_80e71a25104940ee143d00b573cdcb71.bindTooltip(
+                `<div>
+                     Kya-Kya Kembang Jepun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80e71a25104940ee143d00b573cdcb71.setIcon(icon_5ad507fee64b2caa456a4920b6f89302);
+            
+    
+            var marker_2970dae2c36ca0fa5824c2a1b96cdc07 = L.marker(
+                [-7.230815, 112.734215],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_d95170b2e7146d925da709c9f02180a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc18616369283ce2dff22b46ddf533ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26afd46c0ca6e86b8e1c78923f671217 = $(`<div id="html_26afd46c0ca6e86b8e1c78923f671217" style="width: 100.0%; height: 100.0%;"><b>House of Sampoerna</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_cc18616369283ce2dff22b46ddf533ad.setContent(html_26afd46c0ca6e86b8e1c78923f671217);
+            
+        
+
+        marker_2970dae2c36ca0fa5824c2a1b96cdc07.bindPopup(popup_cc18616369283ce2dff22b46ddf533ad)
+        ;
+
+        
+    
+    
+            marker_2970dae2c36ca0fa5824c2a1b96cdc07.bindTooltip(
+                `<div>
+                     House of Sampoerna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2970dae2c36ca0fa5824c2a1b96cdc07.setIcon(icon_d95170b2e7146d925da709c9f02180a4);
+            
+    
+            var marker_a2b1c415068a20ee2b2ccda98be7e105 = L.marker(
+                [-7.2385, 112.7432],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_721a0340145ef13cd658519a57888ca3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03d2c39c2485e51e4086f8eaba36f1bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3648518bffde8960fc56acda380662cb = $(`<div id="html_3648518bffde8960fc56acda380662cb" style="width: 100.0%; height: 100.0%;"><b>Stasiun Surabaya Kota (Semut)</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_03d2c39c2485e51e4086f8eaba36f1bf.setContent(html_3648518bffde8960fc56acda380662cb);
+            
+        
+
+        marker_a2b1c415068a20ee2b2ccda98be7e105.bindPopup(popup_03d2c39c2485e51e4086f8eaba36f1bf)
+        ;
+
+        
+    
+    
+            marker_a2b1c415068a20ee2b2ccda98be7e105.bindTooltip(
+                `<div>
+                     Stasiun Surabaya Kota (Semut)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a2b1c415068a20ee2b2ccda98be7e105.setIcon(icon_721a0340145ef13cd658519a57888ca3);
+            
+    
+            var marker_8dcb7fdc3c7e9fc3e41eef8749c48e0b = L.marker(
+                [-7.2312, 112.7425],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_fa13ee2dd517420251af8699906a5812 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61283a179f8a1762570cd773d69f72b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_309dcd88d70ce375c09ff1dd018613fa = $(`<div id="html_309dcd88d70ce375c09ff1dd018613fa" style="width: 100.0%; height: 100.0%;"><b>Kawasan Ampel Suci</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_61283a179f8a1762570cd773d69f72b9.setContent(html_309dcd88d70ce375c09ff1dd018613fa);
+            
+        
+
+        marker_8dcb7fdc3c7e9fc3e41eef8749c48e0b.bindPopup(popup_61283a179f8a1762570cd773d69f72b9)
+        ;
+
+        
+    
+    
+            marker_8dcb7fdc3c7e9fc3e41eef8749c48e0b.bindTooltip(
+                `<div>
+                     Kawasan Ampel Suci
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8dcb7fdc3c7e9fc3e41eef8749c48e0b.setIcon(icon_fa13ee2dd517420251af8699906a5812);
+            
+    
+            var marker_78eadb5d7fe6e05fa75f9446203daa8d = L.marker(
+                [-7.2355, 112.7375],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_f4d3c115327ba620a5f133b6f1aba32a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aaef1338dd79e445fc3fb8fe622d0807 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86b1ad4f472d2b2f55335294b2ab098d = $(`<div id="html_86b1ad4f472d2b2f55335294b2ab098d" style="width: 100.0%; height: 100.0%;"><b>Taman Jayengrono</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_aaef1338dd79e445fc3fb8fe622d0807.setContent(html_86b1ad4f472d2b2f55335294b2ab098d);
+            
+        
+
+        marker_78eadb5d7fe6e05fa75f9446203daa8d.bindPopup(popup_aaef1338dd79e445fc3fb8fe622d0807)
+        ;
+
+        
+    
+    
+            marker_78eadb5d7fe6e05fa75f9446203daa8d.bindTooltip(
+                `<div>
+                     Taman Jayengrono
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78eadb5d7fe6e05fa75f9446203daa8d.setIcon(icon_f4d3c115327ba620a5f133b6f1aba32a);
+            
+    
+            var marker_c37a768ec4e5fdf12d3a0ff25ecc48ae = L.marker(
+                [-7.2345, 112.731],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_3bc74e9635841ee6bae467d3e5f841d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f361985d10d997b829e108faf5e37aaf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aec58c9cfbcba6fb94c768a28da40309 = $(`<div id="html_aec58c9cfbcba6fb94c768a28da40309" style="width: 100.0%; height: 100.0%;"><b>Jalan Rajawali</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_f361985d10d997b829e108faf5e37aaf.setContent(html_aec58c9cfbcba6fb94c768a28da40309);
+            
+        
+
+        marker_c37a768ec4e5fdf12d3a0ff25ecc48ae.bindPopup(popup_f361985d10d997b829e108faf5e37aaf)
+        ;
+
+        
+    
+    
+            marker_c37a768ec4e5fdf12d3a0ff25ecc48ae.bindTooltip(
+                `<div>
+                     Jalan Rajawali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c37a768ec4e5fdf12d3a0ff25ecc48ae.setIcon(icon_3bc74e9635841ee6bae467d3e5f841d6);
+            
+    
+            var marker_01c9270d6b204d02cbdb387086660f82 = L.marker(
+                [-7.2351, 112.7368],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_971a36d109e34360c8bb21ea102c4926 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_118ce1db9a68344a91fe930ad00ce8fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3987d5123a984f6e5fc421b73a4e786c = $(`<div id="html_3987d5123a984f6e5fc421b73a4e786c" style="width: 100.0%; height: 100.0%;"><b>Gedung Cerutu</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_118ce1db9a68344a91fe930ad00ce8fc.setContent(html_3987d5123a984f6e5fc421b73a4e786c);
+            
+        
+
+        marker_01c9270d6b204d02cbdb387086660f82.bindPopup(popup_118ce1db9a68344a91fe930ad00ce8fc)
+        ;
+
+        
+    
+    
+            marker_01c9270d6b204d02cbdb387086660f82.bindTooltip(
+                `<div>
+                     Gedung Cerutu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01c9270d6b204d02cbdb387086660f82.setIcon(icon_971a36d109e34360c8bb21ea102c4926);
+            
+    
+            var marker_a4e7e8612e4b2dcb6f26bf49476db901 = L.marker(
+                [-7.2372, 112.746],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_a8352218c033afa0d4e59d6376b94fb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8e808d84a07d855d0c920284e2c5816 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_050da7488923de9a54f754d50b42ea62 = $(`<div id="html_050da7488923de9a54f754d50b42ea62" style="width: 100.0%; height: 100.0%;"><b>Jalan Kembang Jepun Timur</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_b8e808d84a07d855d0c920284e2c5816.setContent(html_050da7488923de9a54f754d50b42ea62);
+            
+        
+
+        marker_a4e7e8612e4b2dcb6f26bf49476db901.bindPopup(popup_b8e808d84a07d855d0c920284e2c5816)
+        ;
+
+        
+    
+    
+            marker_a4e7e8612e4b2dcb6f26bf49476db901.bindTooltip(
+                `<div>
+                     Jalan Kembang Jepun Timur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4e7e8612e4b2dcb6f26bf49476db901.setIcon(icon_a8352218c033afa0d4e59d6376b94fb4);
+            
+    
+            var marker_30438830cda425185602c51921c5a99f = L.marker(
+                [-7.2415, 112.748],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_a9a7fbecc61d376ea8a93772a13ecf06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba76768d05c79aeae0c1c3effcb1df19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a57f3c41dd6dd8c83bb6af6b06585c1e = $(`<div id="html_a57f3c41dd6dd8c83bb6af6b06585c1e" style="width: 100.0%; height: 100.0%;"><b>Kawasan Kapasan</b><br>Daerah: Utara<br><b>Cluster ID: 2</b></div>`)[0];
+                popup_ba76768d05c79aeae0c1c3effcb1df19.setContent(html_a57f3c41dd6dd8c83bb6af6b06585c1e);
+            
+        
+
+        marker_30438830cda425185602c51921c5a99f.bindPopup(popup_ba76768d05c79aeae0c1c3effcb1df19)
+        ;
+
+        
+    
+    
+            marker_30438830cda425185602c51921c5a99f.bindTooltip(
+                `<div>
+                     Kawasan Kapasan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30438830cda425185602c51921c5a99f.setIcon(icon_a9a7fbecc61d376ea8a93772a13ecf06);
+            
+    
+            var marker_66f493c7589741606302d2259c7777fe = L.marker(
+                [-7.29134, 112.739815],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_b218295bcef7bb794ba65d8972987322 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d0122f255da935db08d8fc4b9f4aace = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e7b1a8577fcb50601eb987365a9459a = $(`<div id="html_6e7b1a8577fcb50601eb987365a9459a" style="width: 100.0%; height: 100.0%;"><b>Taman Bungkul</b><br>Daerah: Selatan<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_9d0122f255da935db08d8fc4b9f4aace.setContent(html_6e7b1a8577fcb50601eb987365a9459a);
+            
+        
+
+        marker_66f493c7589741606302d2259c7777fe.bindPopup(popup_9d0122f255da935db08d8fc4b9f4aace)
+        ;
+
+        
+    
+    
+            marker_66f493c7589741606302d2259c7777fe.bindTooltip(
+                `<div>
+                     Taman Bungkul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66f493c7589741606302d2259c7777fe.setIcon(icon_b218295bcef7bb794ba65d8972987322);
+            
+    
+            var marker_485ea3e8eaa1b6e0cb9b5c6063b62295 = L.marker(
+                [-7.28552, 112.74153],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_41db2cf7c58651b0b00473b4734d1b1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8360e8ff74b56521c058977db3244a19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95f3ad2e4ba7ce1d640da30f900dec96 = $(`<div id="html_95f3ad2e4ba7ce1d640da30f900dec96" style="width: 100.0%; height: 100.0%;"><b>Jalan Raya Darmo (CFD)</b><br>Daerah: Selatan<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_8360e8ff74b56521c058977db3244a19.setContent(html_95f3ad2e4ba7ce1d640da30f900dec96);
+            
+        
+
+        marker_485ea3e8eaa1b6e0cb9b5c6063b62295.bindPopup(popup_8360e8ff74b56521c058977db3244a19)
+        ;
+
+        
+    
+    
+            marker_485ea3e8eaa1b6e0cb9b5c6063b62295.bindTooltip(
+                `<div>
+                     Jalan Raya Darmo (CFD)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_485ea3e8eaa1b6e0cb9b5c6063b62295.setIcon(icon_41db2cf7c58651b0b00473b4734d1b1f);
+            
+    
+            var marker_c16147ad592ae2f3c763d1e73322c33c = L.marker(
+                [-7.29653, 112.73654],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_1fccf06491671088c51fe93d9cddd0fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_637d3d1af80b8a6030785d902c297007 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c5b3e2e32b9e53be573ebd54f057cb3 = $(`<div id="html_2c5b3e2e32b9e53be573ebd54f057cb3" style="width: 100.0%; height: 100.0%;"><b>Kebun Binatang Surabaya</b><br>Daerah: Selatan<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_637d3d1af80b8a6030785d902c297007.setContent(html_2c5b3e2e32b9e53be573ebd54f057cb3);
+            
+        
+
+        marker_c16147ad592ae2f3c763d1e73322c33c.bindPopup(popup_637d3d1af80b8a6030785d902c297007)
+        ;
+
+        
+    
+    
+            marker_c16147ad592ae2f3c763d1e73322c33c.bindTooltip(
+                `<div>
+                     Kebun Binatang Surabaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c16147ad592ae2f3c763d1e73322c33c.setIcon(icon_1fccf06491671088c51fe93d9cddd0fd);
+            
+    
+            var marker_8af8cbcae68928a0b8042d6144710aa5 = L.marker(
+                [-7.295215, 112.737214],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_6339df970d06f536f77a9e7e5c3608b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17d487e5fe92672a0a137541a18b3508 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb40f869d6f066a9a52b1f29524111ba = $(`<div id="html_bb40f869d6f066a9a52b1f29524111ba" style="width: 100.0%; height: 100.0%;"><b>Patung Suro dan Boyo</b><br>Daerah: Selatan<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_17d487e5fe92672a0a137541a18b3508.setContent(html_bb40f869d6f066a9a52b1f29524111ba);
+            
+        
+
+        marker_8af8cbcae68928a0b8042d6144710aa5.bindPopup(popup_17d487e5fe92672a0a137541a18b3508)
+        ;
+
+        
+    
+    
+            marker_8af8cbcae68928a0b8042d6144710aa5.bindTooltip(
+                `<div>
+                     Patung Suro dan Boyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8af8cbcae68928a0b8042d6144710aa5.setIcon(icon_6339df970d06f536f77a9e7e5c3608b1);
+            
+    
+            var marker_ddad3e6c83b902e55162ef74de1994bd = L.marker(
+                [-7.314215, 112.72653],
+                {
+}
+            ).addTo(map_bf51d0ef30e41b30b3adea0411f8cf30);
+        
+    
+            var icon_36ba494c8e019a69beb4ed9172117a51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7848739b1871a53a151ad2a080bb6330 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d99509d9a5d597f4ba5027ca3fb6a83 = $(`<div id="html_4d99509d9a5d597f4ba5027ca3fb6a83" style="width: 100.0%; height: 100.0%;"><b>Kawasan Kampus Ketintang Unesa</b><br>Daerah: Selatan<br><b>Cluster ID: 0</b></div>`)[0];
+                popup_7848739b1871a53a151ad2a080bb6330.setContent(html_4d99509d9a5d597f4ba5027ca3fb6a83);
+            
+        
+
+        marker_ddad3e6c83b902e55162ef74de1994bd.bindPopup(popup_7848739b1871a53a151ad2a080bb6330)
+        ;
+
+        
+    
+    
+            marker_ddad3e6c83b902e55162ef74de1994bd.bindTooltip(
+                `<div>
+                     Kawasan Kampus Ketintang Unesa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ddad3e6c83b902e55162ef74de1994bd.setIcon(icon_36ba494c8e019a69beb4ed9172117a51);
+            
+</script>
+</html>
